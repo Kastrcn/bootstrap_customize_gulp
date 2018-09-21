@@ -1,0 +1,46 @@
+// Overwrite Bootstrap's variables here
+// You can find them in node_modules/bootstrap/scss/_variables.scss
+// Copy the variables you need into this file, don't modify files under node_modules/
+
+// Some example variables that you can uncomment:
+
+// Enabling shadows and gradients
+// $enable-shadows: true;
+// $enable-gradients: true;
+
+// Changing the body background and text
+$body-color: #000;
+$body-bg:#eaeaea;
+$font-family-base: 'Segoe UI Condensed','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+// Changing the border radius of buttons
+$border-radius: 0px;
+// // Changing the theme colors
+// $primary: #3ec89d;
+// $secondary: #3ab7ff;
+// $success: #65ff9f;
+// $info: #7164ff;
+// $warning: #ff9f65;
+// $danger: #ff457b;
+// $light: #f2d4ff;
+// $dark: #18181d; 
+
+$btn-box-shadow:  0px;
+// Navbar
+
+// $navbar-light-active-color: #fff;
+
+// Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
+
+$theme-colors: (
+ "cool":#f2c811
+); 
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) 
+
+
+// Navbar
