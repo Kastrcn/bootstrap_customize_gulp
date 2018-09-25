@@ -10,7 +10,7 @@
 
 // Changing the body background and text
 $body-color: #000;
-$body-bg:#eaeaea;
+$body-bg:#fff;
 $font-family-base: 'Segoe UI Condensed','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
 // Changing the border radius of buttons
 $border-radius: 0px;
@@ -26,7 +26,7 @@ $border-radius: 0px;
 
 $btn-box-shadow:  0px;
 // Navbar
-
+$grid-gutter-width:0px;
 // $navbar-light-active-color: #fff;
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
@@ -35,12 +35,23 @@ $theme-colors: (
  "cool":#f2c811
 ); 
 
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1170px
-) 
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
 
-// Navbar
+$pagination-active-bg:transparent;
+$pagination-active-color:#967100;

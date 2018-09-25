@@ -35,6 +35,9 @@
 //     }
 //   }
 
+
+
+
 @mixin button-variant($background, $border, $hover-background: $background, $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
     color: color-yiq($background);
 
@@ -65,7 +68,7 @@
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
-    .show > &.dropdown-toggle {
+    .show>&.dropdown-toggle {
         color: color-yiq($active-background);
         background-color: $border;
 
@@ -88,38 +91,53 @@
 }
 
 ///nar
-
 .navbar {
     min-height: 68px;
     padding: 0px;
 }
 
-.navbar-power {
+
+
+// Navbar themes
+//
+// Styles for switching between navbars with light or dark background.
+
+// Dark links against a light background
+.navbar-light {
+    border-color: #eee;
+    background-color: $white;
+
     .navbar-brand {
-        color: #000;
+        color: $black;
+
+        @include hover-focus {
+            color: $navbar-light-active-color;
+        }
     }
 
     .navbar-nav {
         .nav-link {
-            color: #000;
+            color: black;
             height: 68px;
             line-height: 68px;
             padding: 0 15px;
+            font-weight: 600;
 
             @include hover-focus {
+                color: $navbar-light-hover-color;
                 background: #f6d958;
             }
-
 
             &.disabled {
                 color: $navbar-light-disabled-color;
             }
         }
 
-        .show > .nav-link,
-        .active > .nav-link,
+        .show>.nav-link,
+        .active>.nav-link,
         .nav-link.show,
         .nav-link.active {
+            color: $navbar-light-active-color;
             background: #f6d958;
         }
     }
@@ -134,13 +152,74 @@
     }
 
     .navbar-text {
-        color: #000;
+        color: $black;
 
         a {
-            color: #000;
+            color: $black;
+
+            @include hover-focus {
+                color: $navbar-light-active-color;
+            }
         }
     }
 }
+
+// White links against a dark background
+.navbar-dark {
+    .navbar-brand {
+        color: $navbar-dark-active-color;
+
+        @include hover-focus {
+            color: $navbar-dark-active-color;
+        }
+    }
+
+    .navbar-nav {
+       
+        .nav-link {
+            color: $navbar-dark-color;
+
+            @include hover-focus {
+                color: $navbar-dark-hover-color;
+            }
+
+            &.disabled {
+                color: $navbar-dark-disabled-color;
+            }
+        }
+
+        .show>.nav-link,
+        .active>.nav-link,
+        .nav-link.show,
+        .nav-link.active {
+            color: $navbar-dark-active-color;
+        }
+    }
+
+    .navbar-toggler {
+        color: $navbar-dark-color;
+        border-color: $navbar-dark-toggler-border-color;
+    }
+
+    .navbar-toggler-icon {
+        background-image: $navbar-dark-toggler-icon-bg;
+    }
+
+    .navbar-text {
+        color: $navbar-dark-color;
+
+        a {
+            color: $navbar-dark-active-color;
+
+            @include hover-focus {
+                color: $navbar-dark-active-color;
+            }
+        }
+    }
+}
+
+
+
 
 
 h1 {
@@ -219,7 +298,6 @@ a {
 //custom
 main {
     display: block;
-    padding: 70px 0;
     width: 100%;
 
     h4 {
@@ -258,12 +336,12 @@ side {
     width: 100%;
 }
 
-side > * {
+side>* {
     padding-left: 15px;
     padding-top: 25px;
 }
 
-side > .category > h4 {
+side>.category>h4 {
     color: #666;
     font-family: 'DIN', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
     font-size: 16px;
@@ -271,18 +349,18 @@ side > .category > h4 {
     letter-spacing: .05em;
 }
 
-side > .category ul {
+side>.category ul {
     padding: 0;
 }
 
-side > .category li {
+side>.category li {
     padding-left: 1px;
     margin-bottom: 10px;
     list-style: none;
     color: #000;
 }
 
-side > .category li a {
+side>.category li a {
     color: #000;
 }
 
