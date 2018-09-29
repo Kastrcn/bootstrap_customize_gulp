@@ -7,6 +7,132 @@ UpDate by：Name
 ------------------
 */
 @import 'custom-variables';
-@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// /*
+//  * 初始化变量 
+//  * $colors
+//  * $theme-colors 
+//  * $grid-breakpoints 定义布局更改的最小尺寸，以适应不同的屏幕尺寸，以便在媒体查询中使用。
+//  * $font-family-sans-serif 
+//  * $font-family-monospace
+//  */
+@import "../../node_modules/bootstrap/scss/root";
+
+// /* 
+//  * 样式初始化
+//  * https://github.com/necolas/normalize.css
+//  */
+// @import "../../node_modules/bootstrap/scss/reboot";
+// /*
+//  * Bootstrap排版的文档和示例，包括全局设置，标题，正文，列表等。
+//  * $headings-margin-bottom
+//  * $headings-font-family
+//  * $headings-font-weight
+//  * $headings-line-height
+//  * $headings-color
+//  * 
+//  * $h1-font-size
+//  * $h2-font-size
+//  * $h3-font-size
+//  * $h4-font-size
+//  * $h5-font-size
+//  * $h6-font-size
+//  * 
+//  * $lead-font-size
+//  * $lead-font-weight
+//  * 
+//  * $display1-size
+//  * $display1-weight
+//  * $display2-size
+//  * $display2-weight
+//  * $display3-size
+//  * $display3-weight
+//  * $display4-size
+//  * $display4-weight
+//  * $display-line-height
+//  * 
+//  * $hr-margin-y
+//  * $hr-margin-y
+//  * $hr-border-color
+//  *
+//  * $small-font-size
+//  * $font-weight-normal
+//  * $mark-padding
+//  * $mark-bg
+//  * 
+//  * $list-inline-padding
+//  */
+
+// @import "../../node_modules/bootstrap/scss/type";
+
+
+// /*
+//  * $thumbnail-padding
+//  * $thumbnail-bg
+//  * $thumbnail-border-width
+//  * $thumbnail-border-color
+//  * $thumbnail-border-radius
+//  * $thumbnail-box-shadow
+//  * $spacer
+//  * $figure-caption-font-size
+//  * $figure-caption-color
+//  */
+
+// @import "../../node_modules/bootstrap/scss/images";
+// /*
+//  * $code-font-size
+//  * $code-color
+//  * $kbd-padding-y
+//  * $kbd-padding-x
+//  * $kbd-font-size
+//  * $kbd-color
+//  * $kbd-bg
+//  * $border-radius-sm
+//  * $kbd-box-shadow
+//  * $nested-kbd-font-weight
+//  * $pre-color
+//  * $pre-scrollable-max-height
+//  */
+
+// @import "../../node_modules/bootstrap/scss/code";
+// @import "../../scss/grid";
+
+
+
+
+
+
+
+// @import "../../node_modules/bootstrap/scss/tables";
+// @import "../../node_modules/bootstrap/scss/forms";
+// @import "../../node_modules/bootstrap/scss/buttons";
+// @import "../../node_modules/bootstrap/scss/transitions";
+// @import "../../node_modules/bootstrap/scss/dropdown";
+// @import "../../node_modules/bootstrap/scss/button-group";
+// @import "../../node_modules/bootstrap/scss/input-group";
+// @import "../../node_modules/bootstrap/scss/custom-forms";
+// @import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+// @import "../../node_modules/bootstrap/scss/card";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/badge";
+// @import "../../node_modules/bootstrap/scss/jumbotron";
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
+// @import "../../node_modules/bootstrap/scss/media";
+// @import "../../node_modules/bootstrap/scss/list-group";
+// @import "../../node_modules/bootstrap/scss/close";
+// @import "../../node_modules/bootstrap/scss/modal";
+// @import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/popover";
+// @import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/utilities";
+// @import "../../node_modules/bootstrap/scss/print";
+
 @import 'custom-styles';
 
